@@ -80,5 +80,22 @@ Spring @Enable模块装配
                             @EnableFeignClients     Feign客户端模块
                             @EnableZuulProxy        服务网关Zuul模块
                             @EnableCircuitBreaker   服务熔断模块
+Spring Framework手动装配
+Spring条件装配
+    定义：Bean装配前置判断
+    举例：@Profile、@Conditional
+    实现：注解方式、编程方式
+    从Spring Frameworke3.1开始，允许Bean装配时增加前置条件判断
+    Spring注解            场景说明                起始版本
+    @Profile              配置化条件装配          3.1
+    @Conditional          编程条件装配            4.0
+
+SpringBoot自动装配
+    SpringBoot自定装配
+        定义：基于约定大于配置的原则，实现Spring组件自动装配的目的
+        装配：模式注解、@Enable模块、条件装配、工厂加载机制
+        实现：激活自动装配、实现自动装配、配置自动装配实现
+
+
 
 
